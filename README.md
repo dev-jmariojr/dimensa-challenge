@@ -1,6 +1,6 @@
 # dimensa-challenge
 #### Author: José Mário R Júnior
-## About <a name = "about"></a>
+## About
 
 Restful API Contacts - Challenge Dimensa Tecnologia
 
@@ -14,6 +14,11 @@ Restful API Contacts - Challenge Dimensa Tecnologia
 | `PUT`        | Update an existing contact                  | v1/contacts/{id}     |
 | `DELETE`     | Remove an existing contact                  | v1/contacts/{id}     |
 
+
+## Documentation
+
+    https://api-challenge-dimensa.herokuapp.com/swagger-ui.html
+
 ## Technology/ Frameworks
 
 ```
@@ -24,6 +29,7 @@ Restful API Contacts - Challenge Dimensa Tecnologia
    Mockito
    Git
    Heroku
+   Swagger
 ```
 
 ## Environment Variables

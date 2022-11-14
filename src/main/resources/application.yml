@@ -1,3 +1,5 @@
+server:
+  port: 8989
 app:
   name: Challenge Dimensa Contacts API
 spring:
@@ -6,6 +8,6 @@ spring:
     username: postgres
     password: postgres
   jpa:
-    #show-sql: true
+#    show-sql: true
     hibernate:
       ddl-auto: 'create-drop'

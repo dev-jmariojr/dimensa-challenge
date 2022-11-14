@@ -24,7 +24,7 @@ public class ContactsService implements IContactsService {
     }
 
     @Override
-    public Contacts find(Long id) {
+    public Contacts findOne(Long id) {
         return contactsRepository.findById(id).orElse(null);
     }
 

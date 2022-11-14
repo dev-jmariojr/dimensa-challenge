@@ -48,7 +48,7 @@ public class ContactsController {
 
     @GetMapping("/{id}")
     public ResponseEntity<Contacts> findOne(@PathVariable Long id){
-        Contacts contacts = contactsService.find(id);
+        Contacts contacts = contactsService.findOne(id);
         if(contacts == null)
             return ResponseEntity.notFound().build();
         else
@@ -62,7 +62,7 @@ public class ContactsController {
 
     @PutMapping("/{id}")
     public ResponseEntity<Contacts> update(@PathVariable Long id, @RequestBody Contacts value){
-        Contacts contacts = contactsService.find(id);
+        Contacts contacts = contactsService.findOne(id);
         if(contacts ==null)
             return ResponseEntity.notFound().build();
         else{
@@ -76,7 +76,7 @@ public class ContactsController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Boolean> remove(@PathVariable Long id){
-        Contacts contacts = contactsService.find(id);
+        Contacts contacts = contactsService.findOne(id);
         if(contacts == null)
             return ResponseEntity.notFound().build();
         else{

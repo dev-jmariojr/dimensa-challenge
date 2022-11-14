@@ -8,7 +8,7 @@ public interface IContactsService {
 
     List<Contacts> listAll(String paramName);
 
-    Contacts find(Long id);
+    Contacts findOne(Long id);
 
     Contacts add(Contacts contacts);
 
